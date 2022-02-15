@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<header>
+  <div class="header">
+    <p id="time"></p>
+    <!-- <p id="nameday"></p> -->
+  </div>
+</header>
+<body>
+	<div class="container">
+		<div class="intro">
+      <h1>TO-DO List</h1>
+    </div>
+
+    <div>
+      <p>Enter text into the input field to add items to TO-DO list.</p>
+      <p>Click the item to mark it as complete.</p>
+      <p>Click "X" to delete task.</p>
+    </div>
+
+		<div>
+      <input id="userInput" type="text" placeholder="Name of the task" maxlength="30">
+      <button id="enter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+      </svg></button>
+    </div>
+
+		<!-- List -->
+		<div class="row">
+			<div class="listItems col-12">
+				<ul class="col-12 offset-0 col-sm-8 offset-sm-2">
+				</ul>
+			</div>
+		</div>
+
+	</div>
+  <script src="bundle.js"></script>
+</body>
+</html>
